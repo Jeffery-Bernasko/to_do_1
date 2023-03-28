@@ -78,9 +78,10 @@ class Login extends StatelessWidget {
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
                                   onPressed: (){
+                                    // a dummy condition to validate the email and password..lol
                                     if(!_emailController.text.contains("@") || _passwordController.text.length < 4)
                                     {
-
+                                      Fluttertoast.showToast(msg: "Please enter correct email and password");
                                     }else
                                     {
                                       Navigator.push(context, MaterialPageRoute(

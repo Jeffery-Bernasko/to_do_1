@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
   final todoList = ToDo.todoList();
   List<ToDo> _foundToDo =[];
   final _todoController = TextEditingController();
-  final _emailController = TextEditingController();
+ 
 
   _handletoDeleteIten(String id){
     setState((){
